@@ -19,6 +19,15 @@ public class AppConfig {
     //@Bean MemberService -> new MemoryMemberRepository()
     //@Bean OrderService -> new MemoryMemberRepository()
 
+    //call AppConfig.memberService
+    //call AppConfig.memberRepository
+    //call AppConfig.memberRepository
+    //call AppConfig.orderService
+    //call AppConfig.memberRepository
+
+    //call AppConfig.memberService
+    //call AppConfig.memberRepository
+    //call AppConfig.orderService
 
     @Bean
     public MemberService memberService() {
