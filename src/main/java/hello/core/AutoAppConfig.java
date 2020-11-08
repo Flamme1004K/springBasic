@@ -13,5 +13,7 @@ import org.springframework.context.annotation.FilterType;
         @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 //AppConfig의 등록을 막는다.
+//설정 패키지는 프로젝트 패키지의 최상단에 놓는것이 권장 방법이다.
+//SpringBoot는 @SpringBootApplication 안에 컴포넌트 스캔이 있다.
 public class AutoAppConfig {
 }
