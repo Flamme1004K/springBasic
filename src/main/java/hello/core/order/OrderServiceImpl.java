@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService{
 
-    private final MemberRepository memberRepository;
+    private final MemberRepository memberRepository; //private final --> 반드시 값이 있어야한다.
     private final DiscountPolicy discountPolicy;
 
-    @Autowired
+    @Autowired //생성자가 하나일 경우 생략해줘도 된다.
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
